@@ -5,8 +5,7 @@ import javax.xml.bind.DatatypeConverter;
 import java.security.*;
 
 /**
- * Java MD5
- * Find the MD5 hash for a given string input
+ * Java Regex 2 - Duplicate Words
  * 
  * @author Nicolas QUINQUENEL
  */
