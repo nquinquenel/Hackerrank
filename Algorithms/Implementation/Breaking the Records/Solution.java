@@ -17,11 +17,11 @@ public class Solution {
         int lower = score[0];
         int nbMax = 0;
         int nbLower = 0;
-        for(int sc : score) {
-            if(sc > max) {
+        for (int sc : score) {
+            if (sc > max) {
                 max = sc;
                 nbMax++;
-            } else if(sc < lower) {
+            } else if (sc < lower) {
                 lower = sc;
                 nbLower++;
             }
@@ -33,7 +33,7 @@ public class Solution {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int[] score = new int[n];
-        for(int score_i = 0; score_i < n; score_i++){
+        for (int score_i = 0; score_i < n; score_i++) {
             score[score_i] = in.nextInt();
         }
         breakingRecords(score);

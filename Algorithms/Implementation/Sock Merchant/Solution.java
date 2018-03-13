@@ -16,12 +16,12 @@ public class Solution {
     	int sockPairs = 0;
         Map<Integer, Integer> m = new HashMap<Integer, Integer>();
         
-        for(int sock : ar) {
+        for (int sock : ar) {
             //Java 8 only
         	m.merge(sock, 1, Integer::sum);
         }
         
-        for(Map.Entry<Integer, Integer> entry : m.entrySet()) {
+        for (Map.Entry<Integer, Integer> entry : m.entrySet()) {
             sockPairs += entry.getValue() / 2;
         }
         
@@ -32,7 +32,7 @@ public class Solution {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int[] ar = new int[n];
-        for(int ar_i = 0; ar_i < n; ar_i++){
+        for (int ar_i = 0; ar_i < n; ar_i++) {
             ar[ar_i] = in.nextInt();
         }
         int result = sockMerchant(n, ar);
