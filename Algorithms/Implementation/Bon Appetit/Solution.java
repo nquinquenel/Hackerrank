@@ -16,8 +16,8 @@ public class Solution {
         int n = in.nextInt();
         int k = in.nextInt();
         int sum = 0;
-        for(int ar_i = 0; ar_i < n; ar_i++){
-            if(ar_i != k)
+        for (int ar_i = 0; ar_i < n; ar_i++) {
+            if (ar_i != k)
                 sum += in.nextInt();
             else
                 in.nextInt();
@@ -26,7 +26,7 @@ public class Solution {
         
         int div = sum / 2;
         
-        if(div == b) {
+        if (div == b) {
             System.out.println("Bon Appetit");
         } else {
             System.out.println(b - div);

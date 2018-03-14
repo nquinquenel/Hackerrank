@@ -18,10 +18,10 @@ public class Solution {
         //Obviously, k needs to be a positive integer, otherwise they won't meet each other
         
         //First, we make sure that we won't divide by 0
-        if((v1 - v2) == 0)
+        if ((v1 - v2) == 0)
             return "NO";
         //Then, we check if k is an integer and that it is positive
-        else if(((x2 - x1) % (v1 - v2)) == 0 && ((x2 - x1) / (v1 - v2)) > 0)
+        else if (((x2 - x1) % (v1 - v2)) == 0 && ((x2 - x1) / (v1 - v2)) > 0)
             return "YES";
         //Else, it is false
         else

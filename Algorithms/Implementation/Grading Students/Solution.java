@@ -28,7 +28,7 @@ public class Solution {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int[] grades = new int[n];
-        for(int grades_i=0; grades_i < n; grades_i++){
+        for (int grades_i=0; grades_i < n; grades_i++) {
             grades[grades_i] = in.nextInt();
         }
         int[] result = solve(grades);
